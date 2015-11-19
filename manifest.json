@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
     "name": "Fast Forward",
-    "description": "Fast Forward for the works!",
-    "version": "0.3",
+    "description": "This extension fast rewinds you ;-) to bring back part of old Opera UX goodies allowing for predictive navigation within websites",
+    "version": "0.4",
     "background": {
         "page": "background.html"
     },

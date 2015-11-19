@@ -11,8 +11,7 @@ if (document instanceof HTMLDocument) {
         clearInterval(interval);
     });
     document.addEventListener('keydown', function(e) {
-        e = e || window.event;
-        if (e.keyCode !== 32)
+        if (e.keyCode !== 32 && e.keyCode !== 88)
             return;
 
         var el = e.target;
@@ -24,7 +23,8 @@ if (document instanceof HTMLDocument) {
         if (el.tagName == 'INPUT' || el.tagName == 'TEXTAREA')
             return;
 
-        if (e.shiftKey || at_bottom()) {
+        if ((e.keyCode === 88 && e.shiftKey)
+        ||  (e.keyCode === 32 && at_bottom())) {
             load_next();
         }
     });
@@ -57,6 +57,7 @@ if (document instanceof HTMLDocument) {
         }
     }
     function find_semantic_links() {
+        // FIXME keep markers in sep file?
         var markers = [
             ">>",
             "->",
@@ -68,6 +69,9 @@ if (document instanceof HTMLDocument) {
             "^następne",
             // en
             "^next",
+            // cat
+            "pròxim",
+            "següent",
             // cz
             "další",
             // es

@@ -1,16 +1,18 @@
 This is an Opera extension - likely compatible with bare Chromium as well,
-though untested - that implements quick navigation feature of the old
-beloved Opera known as Fast Forward. It predicts, what link gonna be visited
-next and upon hitting Space bar to scroll page, automatically loads the
-next detected URL.
+though untested - that implements quick predictive navigation feature of
+the old beloved Opera known as Fast Forward.
 
-So far implemented:
+Implemented features:
 
-rel link/a(nchor) tags reader
-* content script requiring browsing sites access
+Rel link (next, up, index) tag observer
+Semantic anchor tags observer
+* Content script requiring browsing sites access
 
-Seeks for links with specific inner text content and so do titles
-* special case look for older / previous (historical next) links
+Seeks for links with specific inner text content or titles
+* Special case: seeks for older / previous (historical next) links
   for sinking content use case, think blogs.
-* poor localization coverage though
-* also requires browsing sites access
+* This part has poor localization coverage though
+* Also requires browsing sites access
+
+Space at the end of current page to load next detected page.
+Shift+x anywhere as shortcut to load next page right away.

@@ -2,15 +2,20 @@ TODO
 
 Have own nice looking icon
 
-History pattern detecting and URL guessing
-* technically URL observer
-** needs browsing history access
+Wider coverage of semantic keyword localization
 
 If URL ends with slash, assume dir listing and go through
-URLs on page to detect sequence pattern.
+URLs on page to detect sequence pattern. And set next URLs
+based on them.
 
 Add support for buttons with specific text AND titles
 to semantic URL detection
 * click event dispatch needed
 
-More keyword localization is needed also
+Per platform shortcuts that resemble reverend Opera experience
+* Win, Mac: Alt+Right
+* Ctrl+Right
+
+History pattern detecting and URL guessing
+* history observer
+** needs browsing history access

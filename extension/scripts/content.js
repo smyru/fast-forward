@@ -64,6 +64,7 @@ if (document instanceof HTMLDocument) {
             "=>",
             "-->",
             "==>",
+            "»",
             // pl
             "^następna",
             "^następne",

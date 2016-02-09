@@ -7,7 +7,6 @@ of the old beloved Opera known as Fast Forward.
 ## Implemented features:
 
 Rel link (next, up, index) tag observer
-Semantic anchor tags observer
 * Content script requiring browsing sites access
 
 Seeks for links with specific inner text content or titles

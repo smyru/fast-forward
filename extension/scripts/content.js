@@ -31,8 +31,11 @@ if (document instanceof HTMLDocument) {
 
     function detect() {
         var url;
+        // First detect semantic rel tag, assume webmasters know
+        // what they are doing.
         if (url = find_rel_links())
             return url;
+        // Guessing mode
         url = find_semantic_links();
         return url;
     }

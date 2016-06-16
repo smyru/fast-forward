@@ -106,6 +106,7 @@ function find_semantic_link() {
         "starsze posty",
         "older entr(y|ies)",
         "older post",
+        "plus anciens",
     ];
     var re = new RegExp(markers.join("|"), "i");
 
